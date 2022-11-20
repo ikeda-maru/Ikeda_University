@@ -29,11 +29,7 @@
                 </div>
                 <div class="tab_panel_content">
                   <div class="course_image">
-                    <?php
-                      $image     = the_post_thumbnail();
-                      $image_url = $image['sizes']['large'];
-                    ?>
-                    <img src="<?php echo $image_url ?>" alt="">
+                    <?php the_post_thumbnail('large'); ?>
                   </div>
                   <div class="tab_panel_text">
                     <p>
